@@ -12,6 +12,7 @@ export class VinylComponent implements OnInit {
   @Input() vinylProductor?: string;
   @Input() vinylMovieUsed?: string;
   @Input() vinylVideoLink?: string;
+  @Input() vinylTour?: boolean;
   @Input() id?: string ;
 
   constructor() { }
