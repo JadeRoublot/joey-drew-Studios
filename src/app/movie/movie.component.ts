@@ -22,4 +22,8 @@ export class MovieComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getNature() {
+    return this.movieNature;
+  }
+
 }

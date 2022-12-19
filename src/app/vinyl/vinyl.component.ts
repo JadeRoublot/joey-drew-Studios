@@ -20,4 +20,7 @@ export class VinylComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getTour() {
+    return this.vinylTour;
+  }
 }
