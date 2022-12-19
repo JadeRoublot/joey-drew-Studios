@@ -13,6 +13,7 @@ export class MovieComponent implements OnInit {
   @Input() movieRealisator?: string;
   @Input() movieSynopsis?: string;
   @Input() movieMusic?: string;
+  @Input() movieVideoLink?: string;
   @Input() id?: string ;
 
   constructor() { }
