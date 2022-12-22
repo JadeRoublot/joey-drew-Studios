@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { VinylComponent } from './vinyl/vinyl.component';
 import { MovieComponent } from './movie/movie.component';
 
+import { MovieService } from './services/movie/movie.service';
+import { VinylService } from './services/vinyl/vinyl.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,11 @@ import { MovieComponent } from './movie/movie.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    MovieService,
+    VinylService
+  ],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
