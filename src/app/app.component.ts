@@ -38,4 +38,9 @@ export class AppComponent {
 
   ];
 
+  constructor(
+    private Movie: MovieService,
+    private Vinyl: VinylService
+  ) {}
+
 }
