@@ -22,4 +22,17 @@ export class MovieService {
     }
     
   ];
+
+  setNature() {
+    for (const movie of this.movies) {
+      movie.nature = true;
+    }
+  }
+
+  setUnNature() {
+    for (const movie of this.movies) {
+      movie.nature = false;
+      console.log(movie);
+    }
+  }
 }

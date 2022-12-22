@@ -18,4 +18,17 @@ export class VinylService {
 
     }
   ];
+
+  setTour() {
+    for (const vinyl of this.vinyls) {
+      vinyl.tour = true;
+    }
+  }
+
+  setUnTour() {
+    for (const vinyl of this.vinyls) {
+      vinyl.tour = false;
+      console.log(vinyl);
+    }
+  }
 }
