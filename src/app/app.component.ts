@@ -25,4 +25,20 @@ export class AppComponent {
     this.movies = this.Movie.movies;
     this.vinyls = this.Vinyl.vinyls;
   }
+
+  changeMovieNatureAll() {
+    this.Movie.setNature();
+  }
+
+  unChangeMovieNatureAll() {
+    this.Movie.setUnNature();
+  }
+
+  changeVinylTourAll() {
+    this.Vinyl.setTour();
+  }
+
+  unChangeVinylTourAll() {
+    this.Vinyl.setUnTour();
+  }
 }
