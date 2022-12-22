@@ -1,4 +1,13 @@
 <li class="list-group-item">
 
-    <h3> Movie Title : {{movieTitle}} --- Qualitée : {{getNature()}}</h3>
+    <div class="Qualiter" *ngIf="movieNature == false">
+        
+        <h3> Movie Title : {{movieTitle}} --- Qualiter : Reproduction</h3>
+
+    </div>
+    <div class="Qualiter" *ngIf="movieNature == true">
+        
+        <h3> Movie Title : {{movieTitle}} --- Qualiter : Original</h3>
+
+    </div>
 </li>

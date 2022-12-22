@@ -1,4 +1,13 @@
 <li class="list-group-item">
 
-    <h3>Vinyl Title : {{vinylTitle}} --- NbTour : {{getTour()}}</h3>
+    <div class="Tour" *ngIf="vinylTour == false">
+        
+        <h3> Vinyl Title : {{vinylTitle}} --- 78 Tours </h3>
+
+    </div>
+    <div class="Tour" *ngIf="vinylTour == true">
+        
+        <h3> Vinyk Title : {{vinylTitle}} --- 33 Tours</h3>
+
+    </div>
 </li>
