@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { VinylService } from '../services/vinyl/vinyl.service';
+
 
 @Component({
   selector: 'app-vinyl',
@@ -13,9 +15,11 @@ export class VinylComponent implements OnInit {
   @Input() vinylMovieUsed?: string;
   @Input() vinylVideoLink?: string;
   @Input() vinylTour?: boolean;
-  @Input() id?: string ;
+  @Input() id?: number ;
 
-  constructor() { }
+  constructor(
+    public Vinyl: VinylService
+  ) { }
 
   ngOnInit(): void {
   }
@@ -23,4 +27,8 @@ export class VinylComponent implements OnInit {
   getTour() {
     return this.vinylTour;
   }
+
+  onSwitchVinyl() {
+     //this.Vinyl.switchTour(this.id?);
+   }
 }

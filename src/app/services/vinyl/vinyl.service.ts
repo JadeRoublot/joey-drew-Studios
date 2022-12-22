@@ -9,6 +9,7 @@ export class VinylService {
 
   vinyls = [
     {
+      id: 1,
       title: 'Tasty Trio Troubles Sound Soundtrack',
       releaseDate: '06/03/1935',
       productor: 'Sammy Lawrence',
@@ -30,5 +31,9 @@ export class VinylService {
       vinyl.tour = false;
       console.log(vinyl);
     }
+  }
+
+  switchTour(index: number) {
+    this.vinyls[index].tour = !this.vinyls[index].tour;
   }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MovieService } from '../services/movie/movie.service';
 
 @Component({
   selector: 'app-movie',
@@ -16,15 +17,21 @@ export class MovieComponent implements OnInit {
   @Input() movieVideoLink?: string;
   @Input() movieAfficheLink?: string;
   @Input() movieNature?: boolean;
-  @Input() id?: string ;
+  @Input() id?: number ;
 
-  constructor() { }
+  constructor(
+   public Movie: MovieService
+  ) { }
 
   ngOnInit(): void {
   }
 
   getNature() {
     return this.movieNature;
+  }
+
+  onSwitchMovie() {
+    //this.Movie.switchNature(this.id);
   }
 
 }

@@ -5,16 +5,16 @@
 <h2> Test </h2>
 
 <ul class="list-group">
-    <app-movie *ngFor="let movie of movies" [movieTitle]="movie.title" [movieReleaseDate]="movie.releaseDate"
+    <app-movie *ngFor="let movie of movies; let i = index" [movieTitle]="movie.title" [movieReleaseDate]="movie.releaseDate"
     [movieProductor]="movie.productor" [movieRealisator]="movie.realisator" [movieSynopsis]="movie.synopsis" 
     [movieNature]="movie.nature" [movieMusic]="movie.musicComposeur" [movieVideoLink]="movie.link"
-    [movieAfficheLink]="movie.affiche"></app-movie>
+    [movieAfficheLink]="movie.affiche" [id]="movie.id"></app-movie>
 </ul>
 
 <ul class="list-group">
-    <app-vinyl *ngFor="let vinyl of vinyls" [vinylTitle]="vinyl.title" [vinylReleaseDate]="vinyl.releaseDate"
+    <app-vinyl *ngFor="let vinyl of vinyls; let i = index" [vinylTitle]="vinyl.title" [vinylReleaseDate]="vinyl.releaseDate"
     [vinylProductor]="vinyl.productor" [vinylMovieUsed]="vinyl.movieUsing" [vinylVideoLink]="vinyl.link"
-    [vinylTour]="vinyl.tour"></app-vinyl>
+    [vinylTour]="vinyl.tour" [id]="vinyl.id"></app-vinyl>
 </ul>
 <button class="btn btn-outline-success" (click)="changeMovieNatureAll()">Tout les movie son Originaux</button>
 <button class="btn btn-outline-danger" (click)="unChangeMovieNatureAll()">Tout les movie son des Reproduction</button>

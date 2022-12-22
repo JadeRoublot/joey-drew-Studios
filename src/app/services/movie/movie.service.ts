@@ -9,6 +9,7 @@ export class MovieService {
 
   movies = [
     {
+      id: 1,
       title: 'Tasty Trio Troubles',
       releaseDate: '06/03/1935',
       productor: 'Joey Drew',
@@ -34,5 +35,9 @@ export class MovieService {
       movie.nature = false;
       console.log(movie);
     }
+  }
+
+  switchNature(index : number) {
+    this.movies[index].nature = !this.movies[index].nature;
   }
 }
