@@ -16,5 +16,8 @@
     [vinylProductor]="vinyl.productor" [vinylMovieUsed]="vinyl.movieUsing" [vinylVideoLink]="vinyl.link"
     [vinylTour]="vinyl.tour"></app-vinyl>
 </ul>
-
+<button class="btn btn-outline-success" (click)="changeMovieNatureAll()">Tout les movie son Originaux</button>
+<button class="btn btn-outline-danger" (click)="unChangeMovieNatureAll()">Tout les movie son des Reproduction</button>
+<button class="btn btn-outline-success" (click)="changeVinylTourAll()">Tout les vinyl son des 33 tours</button>
+<button class="btn btn-outline-danger" (click)=" unChangeVinylTourAll()">Tout les vinyl son des 78 tours</button>
 </body>
