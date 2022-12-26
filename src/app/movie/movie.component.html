@@ -24,9 +24,9 @@
 
             <button class="btn btn-dark" (click)="onSwitchMovie()">Switch</button>
 
-            &nbsp; <a [routerLink]="" class="btn btn-dark">En s'avoir plus</a>
+            &nbsp; <a [routerLink]="['/learnMoreMovie', id]" class="btn btn-dark">En s'avoir plus</a>
 
-            &nbsp; <a [routerLink]="" class="btn btn-dark">Modifier</a>
+            &nbsp; <a [routerLink]="['/modifMovie', id]" class="btn btn-dark">Modifier</a>
 
             &nbsp; <a [routerLink]="" class="btn btn-dark">Supprimer</a>
             

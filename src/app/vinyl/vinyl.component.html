@@ -19,9 +19,9 @@
             
             <button class="btn btn-dark" (click)="onSwitchVinyl()">Switch</button>
             
-            &nbsp; <a [routerLink]="" class="btn btn-dark">En s'avoir plus</a>
+            &nbsp; <a [routerLink]="['/learnMoreVinyl', id]" class="btn btn-dark">En s'avoir plus</a>
 
-            &nbsp; <a [routerLink]="" class="btn btn-dark">Modifier</a>
+            &nbsp; <a [routerLink]="['/modifVinyl', id]" class="btn btn-dark">Modifier</a>
 
             &nbsp; <a [routerLink]="" class="btn btn-dark">Supprimer</a>
         
