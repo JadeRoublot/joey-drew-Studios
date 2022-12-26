@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MovieService } from './services/movie/movie.service';
 import { VinylService } from './services/vinyl/vinyl.service';
 
 @Component({
@@ -9,7 +8,7 @@ import { VinylService } from './services/vinyl/vinyl.service';
 })
 export class AppComponent {
   title = 'joey-drew-Studios';
-  movies:any = [];
+
   vinyls:any = [];
   
 
@@ -17,22 +16,13 @@ export class AppComponent {
  
 
   constructor(
-    private Movie: MovieService,
     private Vinyl: VinylService
   ) {}
 
   ngOnInit() {
-    this.movies = this.Movie.movies;
     this.vinyls = this.Vinyl.vinyls;
   }
 
-  changeMovieNatureAll() {
-    this.Movie.setNature();
-  }
-
-  unChangeMovieNatureAll() {
-    this.Movie.setUnNature();
-  }
 
   changeVinylTourAll() {
     this.Vinyl.setTour();

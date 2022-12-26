@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieService } from '../services/movie/movie.service';
 
 @Component({
   selector: 'app-movie-list',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie-list.component.scss']
 })
 export class MovieListComponent implements OnInit {
+  movies:any = [];
 
-  constructor() { }
+  constructor(
+    private Movie: MovieService
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.movies = this.Movie.movies;
   }
 
+  changeMovieNatureAll() {
+    this.Movie.setNature();
+  }
+
+  unChangeMovieNatureAll() {
+    this.Movie.setUnNature();
+  }
 }

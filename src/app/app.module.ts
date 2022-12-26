@@ -16,6 +16,8 @@ import { VinylModifComponent } from './vinyl-modif/vinyl-modif.component';
 import { MovieModifComponent } from './movie-modif/movie-modif.component';
 import { MovieNewComponent } from './movie-new/movie-new.component';
 import { VinylNewComponent } from './vinyl-new/vinyl-new.component';
+import { VinylLearnMoreComponent } from './vinyl-learn-more/vinyl-learn-more.component';
+import { MovieLearnMoreComponent } from './movie-learn-more/movie-learn-more.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { VinylNewComponent } from './vinyl-new/vinyl-new.component';
     VinylModifComponent,
     MovieModifComponent,
     MovieNewComponent,
-    VinylNewComponent
+    VinylNewComponent,
+    VinylLearnMoreComponent,
+    MovieLearnMoreComponent
  
   ],
   imports: [

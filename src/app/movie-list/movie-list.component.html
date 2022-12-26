@@ -1,1 +1,19 @@
-<p>movie-list works!</p>
+<br>
+<ul class="list-group">
+    <app-movie *ngFor="let movie of movies; let i = index" 
+    [movieTitle]="movie.title" 
+    [movieReleaseDate]="movie.releaseDate"
+    [movieProductor]="movie.productor" 
+    [movieRealisator]="movie.realisator" 
+    [movieSynopsis]="movie.synopsis" 
+    [movieNature]="movie.nature" 
+    [movieMusic]="movie.musicComposeur" 
+    [movieVideoLink]="movie.link"
+    [movieAfficheLink]="movie.affiche" 
+    [id]="movie.id"></app-movie>
+</ul>
+
+<br>
+
+<button class="btn btn-outline-success" (click)="changeMovieNatureAll()">Tout les movie son Originaux</button>
+<button class="btn btn-outline-danger" (click)="unChangeMovieNatureAll()">Tout les movie son des Reproduction</button>
