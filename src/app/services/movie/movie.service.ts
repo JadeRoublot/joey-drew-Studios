@@ -17,7 +17,7 @@ export class MovieService {
       synopsis: 'Bendy gets a taste of the Butcher Gang and little else in this beloved classic cartoon from 1935.',
       musicComposeur: 'Sammy Lawrence',
       link: 'https://youtu.be/MX9x1oCGzX0',
-      affiche: '...',
+      affiche: 'https://i.pinimg.com/originals/7a/57/c1/7a57c177ee7c2a5e96f44df3f49088b6.png',
       nature: true
 
     }

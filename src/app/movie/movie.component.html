@@ -1,14 +1,35 @@
 <li class="list-group-item">
+    <div class="row">
 
-    <div class="Qualiter" *ngIf="movieNature == false">
-        
-        <h3> Movie Title : {{movieTitle}} --- Qualiter : Reproduction</h3>
+        <div class="col-2">
+            <img class="affiche" [src]="movieAfficheLink" alt="image movie">
+        </div>
 
+        <div class="col-8">
+            <div class="Qualiter" *ngIf="movieNature == false">
+                
+
+                <h3> Movie Title : {{movieTitle}} --- Qualiter : Reproduction</h3>
+
+            </div>
+
+            <div class="Qualiter" *ngIf="movieNature == true">
+                
+
+                <h3> Movie Title : {{movieTitle}} --- Qualiter : Original</h3>
+
+            </div>
+
+            <br>
+
+            <button class="btn btn-dark" (click)="onSwitchMovie()">Switch</button>
+
+            &nbsp; <a [routerLink]="" class="btn btn-dark">En s'avoir plus</a>
+
+            &nbsp; <a [routerLink]="" class="btn btn-dark">Modifier</a>
+
+            &nbsp; <a [routerLink]="" class="btn btn-dark">Supprimer</a>
+            
+        </div>
     </div>
-    <div class="Qualiter" *ngIf="movieNature == true">
-        
-        <h3> Movie Title : {{movieTitle}} --- Qualiter : Original</h3>
-
-    </div>
-    <button class="btn btn-outline-info" (click)="onSwitchMovie()">Switch</button>
 </li>

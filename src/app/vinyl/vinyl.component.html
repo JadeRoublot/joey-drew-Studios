@@ -1,14 +1,30 @@
+
 <li class="list-group-item">
+    
+    <div class="row">
+        <div class="col-8">
+            <div class="Tour" *ngIf="vinylTour == false">
+                
+                <h3> Vinyl Title : {{vinylTitle}} --- 78 Tours </h3>
 
-    <div class="Tour" *ngIf="vinylTour == false">
+            </div>
+
+            <div class="Tour" *ngIf="vinylTour == true">
+                
+                <h3> Vinyl Title : {{vinylTitle}} --- 33 Tours</h3>
+
+            </div>
+            
+            <br>
+            
+            <button class="btn btn-dark" (click)="onSwitchVinyl()">Switch</button>
+            
+            &nbsp; <a [routerLink]="" class="btn btn-dark">En s'avoir plus</a>
+
+            &nbsp; <a [routerLink]="" class="btn btn-dark">Modifier</a>
+
+            &nbsp; <a [routerLink]="" class="btn btn-dark">Supprimer</a>
         
-        <h3> Vinyl Title : {{vinylTitle}} --- 78 Tours </h3>
-
-    </div>
-    <div class="Tour" *ngIf="vinylTour == true">
-        
-        <h3> Vinyl Title : {{vinylTitle}} --- 33 Tours</h3>
-
-    </div>
-    <button class="btn btn-outline-info" (click)="onSwitchVinyl()">Switch</button>
+        </div>
+    </div>  
 </li>
