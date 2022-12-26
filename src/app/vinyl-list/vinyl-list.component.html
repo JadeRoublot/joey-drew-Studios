@@ -1,6 +1,10 @@
 <br>
 
-<ul class="list-group">
+<a [routerLink]="['/newVinyl']" class="btn btn-dark">Rajouter un Vinyl</a>
+
+<br>
+
+<br><ul class="list-group">
     <app-vinyl *ngFor="let vinyl of vinyls; let i = index" 
     [vinylTitle]="vinyl.title" 
     [vinylReleaseDate]="vinyl.releaseDate"

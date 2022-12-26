@@ -1,5 +1,10 @@
 <br>
-<ul class="list-group">
+
+<a [routerLink]="['/newMovie']" class="btn btn-dark">Rajouter un Film</a>
+
+<br>
+
+<br><ul class="list-group">
     <app-movie *ngFor="let movie of movies; let i = index" 
     [movieTitle]="movie.title" 
     [movieReleaseDate]="movie.releaseDate"
