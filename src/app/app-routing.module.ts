@@ -24,12 +24,28 @@ const routes: Routes = [
     component: MovieNewComponent
   },
   {
+    path: 'modifMovie/:id',
+    component: MovieModifComponent
+  },
+  {
+    path: 'learnMoreMovie/:id',
+    component: MovieLearnMoreComponent
+  },
+  {
     path: 'vinyl',
     component: VinylListComponent
   },
   {
     path: 'newVinyl',
     component: VinylNewComponent
+  },
+  {
+    path: 'modifVinyl/:id',
+    component: VinylModifComponent
+  },
+  {
+    path: 'learnMoreVinyl/:id',
+    component: VinylLearnMoreComponent
   },
   {
     path: '',
