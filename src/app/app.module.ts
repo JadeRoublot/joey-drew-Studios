@@ -18,6 +18,10 @@ import { MovieNewComponent } from './movie-new/movie-new.component';
 import { VinylNewComponent } from './vinyl-new/vinyl-new.component';
 import { VinylLearnMoreComponent } from './vinyl-learn-more/vinyl-learn-more.component';
 import { MovieLearnMoreComponent } from './movie-learn-more/movie-learn-more.component';
+import { UserComponent } from './user/user.component';
+import { SecretListComponent } from './secret-list/secret-list.component';
+import { SecretComponent } from './secret/secret.component';
+import { SecretLearnMoreComponent } from './secret-learn-more/secret-learn-more.component';
 
 
 @NgModule({
@@ -33,7 +37,11 @@ import { MovieLearnMoreComponent } from './movie-learn-more/movie-learn-more.com
     MovieNewComponent,
     VinylNewComponent,
     VinylLearnMoreComponent,
-    MovieLearnMoreComponent
+    MovieLearnMoreComponent,
+    UserComponent,
+    SecretListComponent,
+    SecretComponent,
+    SecretLearnMoreComponent
  
   ],
   imports: [
