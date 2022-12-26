@@ -20,8 +20,16 @@ const routes: Routes = [
     component: MovieListComponent
   },
   {
+    path: 'newMovie',
+    component: MovieNewComponent
+  },
+  {
     path: 'vinyl',
     component: VinylListComponent
+  },
+  {
+    path: 'newVinyl',
+    component: VinylNewComponent
   },
   {
     path: '',
