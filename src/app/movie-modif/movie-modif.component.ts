@@ -8,10 +8,16 @@ import { MovieService } from '../services/movie/movie.service';
   styleUrls: ['./movie-modif.component.scss']
 })
 export class MovieModifComponent implements OnInit {
+  movie: any;
 
-  constructor() { }
+  constructor(
+    private Movie: MovieService,
+    private route: ActivatedRoute
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    const id = this.route.snapshot.params['id'];
+    this.movie = this.Movie.getMovieById(id);
   }
 
 }

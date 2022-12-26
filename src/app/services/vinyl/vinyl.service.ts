@@ -36,4 +36,15 @@ export class VinylService {
   switchTour(index: number) {
     this.vinyls[index].tour = !this.vinyls[index].tour;
   }
+
+  getVinylById(id :number) {
+    let tmp;
+      for(const vinyl of this.vinyls) {
+        if(vinyl.id == id) {
+            tmp = vinyl;
+          }
+      }
+      return tmp;
+  }
+
 }

@@ -8,10 +8,16 @@ import { VinylService } from '../services/vinyl/vinyl.service';
   styleUrls: ['./vinyl-learn-more.component.scss']
 })
 export class VinylLearnMoreComponent implements OnInit {
+  vinyl: any;
 
-  constructor() { }
+  constructor(
+    private Vinyl: VinylService,
+    private route: ActivatedRoute
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    const id = this.route.snapshot.params['id'];
+    this.vinyl = this.Vinyl.getVinylById(id);
   }
 
 }

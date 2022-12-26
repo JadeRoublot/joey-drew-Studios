@@ -40,4 +40,14 @@ export class MovieService {
   switchNature(index : number) {
     this.movies[index].nature = !this.movies[index].nature;
   }
+
+  getMovieById(id :number) {
+    let tmp;
+      for(const movie of this.movies) {
+        if(movie.id == id) {
+            tmp = movie;
+          }
+      }
+      return tmp;
+  }
 }
