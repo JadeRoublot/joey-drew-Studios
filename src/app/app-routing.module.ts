@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
+
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { VinylListComponent } from './vinyl-list/vinyl-list.component';
 
@@ -50,6 +52,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'user',
+    component: UserComponent
   }
 ];
 
