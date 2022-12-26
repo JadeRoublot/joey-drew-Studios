@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { VinylService } from './services/vinyl/vinyl.service';
+
 
 @Component({
   selector: 'app-root',
@@ -9,26 +9,10 @@ import { VinylService } from './services/vinyl/vinyl.service';
 export class AppComponent {
   title = 'joey-drew-Studios';
 
-  vinyls:any = [];
-  
+  constructor() {}
 
-
- 
-
-  constructor(
-    private Vinyl: VinylService
-  ) {}
-
-  ngOnInit() {
-    this.vinyls = this.Vinyl.vinyls;
+  ngOnInit(): void {
+   
   }
 
-
-  changeVinylTourAll() {
-    this.Vinyl.setTour();
-  }
-
-  unChangeVinylTourAll() {
-    this.Vinyl.setUnTour();
-  }
 }

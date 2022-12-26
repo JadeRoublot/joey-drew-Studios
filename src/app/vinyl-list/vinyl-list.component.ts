@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VinylService } from '../services/vinyl/vinyl.service';
 
 @Component({
   selector: 'app-vinyl-list',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vinyl-list.component.scss']
 })
 export class VinylListComponent implements OnInit {
+  vinyls:any = [];
 
-  constructor() { }
+  constructor(
+    private Vinyl: VinylService
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.vinyls = this.Vinyl.vinyls;
+  }
+
+  changeVinylTourAll() {
+    this.Vinyl.setTour();
+  }
+
+  unChangeVinylTourAll() {
+    this.Vinyl.setUnTour();
   }
 
 }

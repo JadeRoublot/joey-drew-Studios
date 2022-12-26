@@ -1,1 +1,15 @@
-<p>vinyl-list works!</p>
+<br>
+
+<ul class="list-group">
+    <app-vinyl *ngFor="let vinyl of vinyls; let i = index" 
+    [vinylTitle]="vinyl.title" 
+    [vinylReleaseDate]="vinyl.releaseDate"
+    [vinylProductor]="vinyl.productor" 
+    [vinylMovieUsed]="vinyl.movieUsing" 
+    [vinylVideoLink]="vinyl.link"
+    [vinylTour]="vinyl.tour" 
+    [id]="vinyl.id"></app-vinyl>
+</ul>
+<br>
+<button class="btn btn-outline-success" (click)="changeVinylTourAll()">Tout les vinyl son des 33 tours</button>
+<button class="btn btn-outline-danger" (click)=" unChangeVinylTourAll()">Tout les vinyl son des 78 tours</button>
