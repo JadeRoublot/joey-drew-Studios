@@ -6,6 +6,7 @@ import { UserComponent } from './user/user.component';
 
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { VinylListComponent } from './vinyl-list/vinyl-list.component';
+import { SecretListComponent } from './secret-list/secret-list.component';
 
 import { MovieNewComponent } from './movie-new/movie-new.component';
 import { VinylNewComponent } from './vinyl-new/vinyl-new.component';
@@ -15,6 +16,8 @@ import { VinylModifComponent } from './vinyl-modif/vinyl-modif.component';
 
 import { MovieLearnMoreComponent } from './movie-learn-more/movie-learn-more.component';
 import { VinylLearnMoreComponent } from './vinyl-learn-more/vinyl-learn-more.component';
+import { SecretLearnMoreComponent } from './secret-learn-more/secret-learn-more.component';
+import { componentFactoryName } from '@angular/compiler';
 
 const routes: Routes = [
   {
@@ -56,6 +59,14 @@ const routes: Routes = [
   {
     path: 'user',
     component: UserComponent
+  },
+  {
+    path: 'secretList',
+    component: SecretListComponent
+  },
+  {
+    path: 'secretLearnMore/:id',
+    component: SecretLearnMoreComponent
   }
 ];
 

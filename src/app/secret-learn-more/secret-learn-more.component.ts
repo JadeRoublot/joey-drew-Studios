@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { SecretService } from '../services/secret/secret.service';
 
 @Component({
   selector: 'app-secret-learn-more',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./secret-learn-more.component.scss']
 })
 export class SecretLearnMoreComponent implements OnInit {
+  secret: any;
 
-  constructor() { }
+  constructor(
+    private Secret: SecretService,
+    private route: ActivatedRoute
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    //const id = this.route.snapshot.params['id'];
+    //this.secret = this.Secret.getSecretById(id);
   }
 
 }
