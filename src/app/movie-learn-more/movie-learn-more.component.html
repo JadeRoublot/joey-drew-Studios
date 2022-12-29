@@ -1,3 +1,16 @@
-<p>movie-learn-more works!</p>
+<div *ngIf="movie">
 
-{{movie|json}}
+    <div class="Qualiter" *ngIf="movie.link === '. . .'">
+                    
+
+        <h3>No link </h3>
+    </div>
+
+    <div class="Qualiter" *ngIf="movie.link !== '. . .'">
+        
+
+        <h3> Link present</h3>
+
+    </div>
+    
+</div>
