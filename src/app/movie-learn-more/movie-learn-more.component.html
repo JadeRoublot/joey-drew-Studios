@@ -1,9 +1,85 @@
 <div *ngIf="movie">
 
     <div class="Qualiter" *ngIf="movie.affiche !== 'https://i.pinimg.com/originals/7a/57/c1/7a57c177ee7c2a5e96f44df3f49088b6.png'">
-                    
+        <br> 
+       <br>
+       <br>
+        <div class="row">
+        <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body text-center">
+                <img class="affiche" [src]="movie.affiche" alt="image movie">
+            </div>
+        </div>
+     
+    </div>
+    <div class="col-lg-8">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Title</p>
+            </div>
+            <div class="col-sm-9">
+              <p>{{movie.title}}</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Quality</p>
+            </div>
+            <div class="col-sm-9" *ngIf="movie.nature === true">
+              <p>Original</p>
+            </div>
+            <div class="col-sm-9" *ngIf="movie.nature === false">
+                <p>Reproduction</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Productor</p>
+            </div>
+            <div class="col-sm-9">
+              <p>{{movie.productor}}</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Realisator</p>
+            </div>
+            <div class="col-sm-9">
+              <p>{{movie.realisator}}</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Date of Release</p>
+            </div>
+            <div class="col-sm-9">
+              <p>{{movie.releaseDate}}</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Synopsis</p>
+            </div>
+            <div class="col-sm-9">
+              <p>{{movie.synopsis}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <h3>No link </h3>
+        <br>
+        <br>
+        <br>
+    </div>
+    </div>
     </div>
 
     <div class="Qualiter" *ngIf="movie.affiche === 'https://i.pinimg.com/originals/7a/57/c1/7a57c177ee7c2a5e96f44df3f49088b6.png'">
