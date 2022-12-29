@@ -10,12 +10,42 @@ export class VinylService {
   vinyls = [
     {
       id: 1,
-      title: 'Tasty Trio Troubles Sound Soundtrack',
+      title: 'Tasty Trio Troubles Soundtrack',
       releaseDate: '06/03/1935',
       productor: 'Sammy Lawrence',
       movieUsing: 'Tasty Trio Troubles',
       link: '...',
       tour: false
+
+    },
+    {
+      id: 2,
+      title: 'The Sheep Song Soundtrack',
+      releaseDate: '02/13/1930',
+      productor: 'Sammy Lawrence',
+      movieUsing: 'The Sheep Song',
+      link: '...',
+      tour: true
+
+    },
+    {
+      id: 3,
+      title: 'The classic whistle',
+      releaseDate: '01/13/1929',
+      productor: 'Joey Drew',
+      movieUsing: 'Intro',
+      link: '...',
+      tour: true
+
+    },
+    {
+      id: 4,
+      title: 'The Dancing Demon Soundtrack',
+      releaseDate: '01/01/1930',
+      productor: 'Sammy Lawrence',
+      movieUsing: 'The Dancing Demon',
+      link: '...',
+      tour: true
 
     }
   ];

@@ -59,6 +59,19 @@ export class MovieService {
       affiche: 'https://i.pinimg.com/originals/0a/9e/1d/0a9e1db10549bfc5dfcba400388e2ef0.jpg',
       nature: false
 
+    },
+    {
+      id: 5,
+      title: 'Hellfire Fighter',
+      releaseDate: '11/01/1933',
+      productor: 'Joey Drew',
+      realisator: 'Joey Drew',
+      synopsis: 'Bendy and Boris brave the blaze in this short from 1933.',
+      musicComposeur: 'Sammy Lawrence',
+      link: 'https://www.youtube.com/embed/E6L4_4Vi43g',
+      affiche: 'https://i.pinimg.com/originals/7a/57/c1/7a57c177ee7c2a5e96f44df3f49088b6.png',
+      nature: true
+
     }
     
   ];
