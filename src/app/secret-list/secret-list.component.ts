@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SecretService } from '../services/secret/secret.service';
 
 @Component({
   selector: 'app-secret-list',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./secret-list.component.scss']
 })
 export class SecretListComponent implements OnInit {
+  
+  secrets:any = [];
 
-  constructor() { }
+  constructor(
+    public Secret: SecretService
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.secrets = this.Secret.secrets;
   }
 
 }
