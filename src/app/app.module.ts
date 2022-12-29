@@ -9,6 +9,7 @@ import { MovieComponent } from './movie/movie.component';
 
 import { MovieService } from './services/movie/movie.service';
 import { VinylService } from './services/vinyl/vinyl.service';
+import { SecretService } from './services/secret/secret.service';
 import { HomeComponent } from './home/home.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { VinylListComponent } from './vinyl-list/vinyl-list.component';
@@ -51,7 +52,8 @@ import { SecretLearnMoreComponent } from './secret-learn-more/secret-learn-more.
   ],
   providers: [
     MovieService,
-    VinylService
+    VinylService,
+    SecretService
   ],
   
   bootstrap: [AppComponent]
