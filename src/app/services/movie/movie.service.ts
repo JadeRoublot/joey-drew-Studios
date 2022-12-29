@@ -16,7 +16,7 @@ export class MovieService {
       realisator: 'Joey Drew',
       synopsis: 'Bendy gets a taste of the Butcher Gang and little else in this beloved classic cartoon from 1935.',
       musicComposeur: 'Sammy Lawrence',
-      link: 'https://youtu.be/MX9x1oCGzX0',
+      link: 'https://www.youtube.com/embed/MX9x1oCGzX0',
       affiche: 'https://i.pinimg.com/originals/7a/57/c1/7a57c177ee7c2a5e96f44df3f49088b6.png',
       nature: true
 
@@ -29,7 +29,7 @@ export class MovieService {
       realisator: 'Joey Drew',
       synopsis: 'A mini short from back in the heyday of Joey Drew Studios.',
       musicComposeur: 'Sammy Lawrence',
-      link: 'https://www.youtube.com/watch?v=3RmZDZja4Hs',
+      link: 'https://www.youtube.com/embed/3RmZDZja4Hs',
       affiche: 'https://i.pinimg.com/originals/7a/57/c1/7a57c177ee7c2a5e96f44df3f49088b6.png',
       nature: true
 
