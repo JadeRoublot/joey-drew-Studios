@@ -1,3 +1,121 @@
-<p>movie-modif works!</p>
+<br>
 
-{{movie|json}}
+<img src="https://www.gematsu.com/wp-content/uploads/2021/12/Company-Logo_Joey-Drew-Studios.png" style="width: 300px;">
+
+<br>
+<div class="card">
+
+    <div *ngIf="movie"> 
+        <div class="row">
+            <div class="col-12 col-sm-12">
+            <div class="form-group">
+                <label>Title</label><br>
+                <input type="text" class="form-control" [(ngModel)]="movie.title">
+            </div>
+            </div>
+            
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Producer</label><br>
+                <input type="text" class="form-control" [(ngModel)]="movie.productor" >
+            </div>
+            </div>
+            <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Realisator</label><br>
+                <input type="text" class="form-control" [(ngModel)]="movie.realisator" >
+            </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+
+            <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Music Composer</label><br>
+                <input type="text" class="form-control" [(ngModel)]="movie.musicComposeur"  >
+            </div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+                <div class="form-group">
+                <label>Release Date</label><br>
+                <input type="text" class="form-control" [(ngModel)]="movie.releaseDate" >
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        
+        <div class="row">
+            <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Cover link</label> <br>
+                <input type="text" class="form-control" [(ngModel)]="movie.affiche" >
+            </div>
+            </div>
+            <div class="col-12 col-sm-6">
+            <div class="form-group">
+                <label>Movie link</label><br>
+                <input type="text" class="form-control" [(ngModel)]="movie.link" >
+            </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+        
+            <div class="col-12 col-sm-6">
+            <div class="form-group row">
+                <label class="col-12 col-form-label">
+                Quality
+                </label>
+                <div class="col-12 row">
+                <div class="col-6">
+                    <div class="form-check">
+                    <input type="radio" name="Qualiter" class="form-check-input" [value]="true" [(ngModel)]="movie.nature"> <label class="form-check-label">Original</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-check">
+                    <input type="radio" name="Qualiter" class="form-check-input" [value]="false" [(ngModel)]="movie.nature" > <label class="form-check-label">Reproduction</label>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-12">
+            <div class="form-group">
+                <label>Synopsis</label><br>
+                <textarea name="synopsis" cols="30" rows="10" class="form-control" [(ngModel)]="movie.synopsis"></textarea>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <br>
+        <div class="row-button">
+            <div class="col-12 text-center">
+            <div class="submit">
+                <button class="btn btn-lg btn-dark">Submit</button>&nbsp; &nbsp;
+                &nbsp; &nbsp;  <a [routerLink]="['/movie']" class="btn btn-lg btn-dark">Return</a> <br>
+                        
+            </div>
+            </div>
+        </div>
+        </div>
+        <br>

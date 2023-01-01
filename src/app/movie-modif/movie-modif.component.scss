@@ -1,0 +1,16 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: invert(1);
+}
+
+.card {
+    background-image: url(https://img.freepik.com/free-photo/vintage-grungy-textured-paper-background_53876-103932.jpg?w=2000);
+    background-size: cover;
+    color:black;
+    box-shadow: 5px 5px 5px 5px black;
+    padding: 18px;
+}
+
