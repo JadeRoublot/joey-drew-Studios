@@ -9,14 +9,14 @@
             <div class="Qualiter" *ngIf="movieNature == false">
                 
 
-                <h3> Movie Title : {{movieTitle}} --- Qualiter : Reproduction</h3>
+                <h3> Movie Title : {{movieTitle}} --- Quality : Reproduction</h3>
 
             </div>
 
             <div class="Qualiter" *ngIf="movieNature == true">
                 
 
-                <h3> Movie Title : {{movieTitle}} --- Qualiter : Original</h3>
+                <h3> Movie Title : {{movieTitle}} --- Quality : Original</h3>
 
             </div>
 
@@ -24,11 +24,11 @@
 
             <button class="btn btn-dark" (click)="onSwitchMovie()">Switch</button>
 
-            &nbsp; <a [routerLink]="['/learnMoreMovie', id]" class="btn btn-dark">En s'avoir plus</a>
+            &nbsp; <a [routerLink]="['/learnMoreMovie', id]" class="btn btn-dark">Learn More</a>
 
-            &nbsp; <a [routerLink]="['/modifMovie', id]" class="btn btn-dark">Modifier</a>
+            &nbsp; <a [routerLink]="['/modifMovie', id]" class="btn btn-dark">Edit</a>
 
-            &nbsp; <a [routerLink]="" class="btn btn-dark">Supprimer</a>
+            &nbsp; <a [routerLink]="" class="btn btn-dark">Delete</a>
             
         </div>
     </div>
