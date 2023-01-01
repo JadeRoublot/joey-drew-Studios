@@ -8,8 +8,10 @@ export class SecretService {
     {
       id: 1,
       title: 'Bendy',
+      nameOfSubject: '[ACCESS DENIED]',
       objectifImgLink: '',
       resultImgLink: '',
+      killCount:'',
       log: ''
 
     }

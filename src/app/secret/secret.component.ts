@@ -11,6 +11,8 @@ export class SecretComponent implements OnInit {
   @Input() secretTitle?: string;
   @Input() secretObjectifImgLink?: string;
   @Input() secretResultImgLink?: string;
+  @Input() secretNameOfSubjectChosed?: string;
+  @Input() secretKillCount?: string;
   @Input() secretLog?: string;
   @Input() id?: number;
 
