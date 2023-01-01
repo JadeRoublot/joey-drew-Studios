@@ -16,8 +16,8 @@ export class SecretLearnMoreComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    //const id = this.route.snapshot.params['id'];
-    //this.secret = this.Secret.getSecretById(id);
+    const id = this.route.snapshot.params['id'];
+    this.secret = this.Secret.getSecretById(id);
   }
 
 }
