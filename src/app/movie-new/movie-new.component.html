@@ -3,12 +3,12 @@
 <img src="https://www.gematsu.com/wp-content/uploads/2021/12/Company-Logo_Joey-Drew-Studios.png" style="width: 300px;">
 
 <br>
-
+<div class="card">
 <div class="row">
     <div class="col-12 col-sm-6">
       <div class="form-group">
-        <label>Titre</label><br>
-        <input type="text" class="form-control">
+        <label>Title</label><br>
+        <input type="text" class="form-control" >
       </div>
     </div>
     <div class="col-12 col-sm-6">
@@ -100,11 +100,16 @@
       </div>
     </div>
   </div>
+</div>
+
   <br>
-  <div class="row">
-    <div class="col-12">
+  <div class="row-button">
+    <div class="col-12 text-center">
       <div class="submit">
-        <button class="btn btn-dark">Envoyer</button>
+        <button class="btn btn-lg btn-dark">Submit</button>&nbsp; &nbsp;
+        &nbsp; &nbsp;  <a [routerLink]="['/movie']" class="btn btn-lg btn-dark">Return</a> <br>
+                
       </div>
     </div>
   </div>
+<br>
