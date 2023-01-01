@@ -8,6 +8,15 @@ import { SecretService } from '../services/secret/secret.service';
 })
 export class SecretComponent implements OnInit {
 
+  @Input() secretTitle?: string;
+  @Input() secretObjectifImgLink?: string;
+  @Input() secretResultImgLink?: string;
+  @Input() secretLog?: string;
+  @Input() id?: number;
+
+
+
+
   constructor(
     public Secret: SecretService
   ) { }

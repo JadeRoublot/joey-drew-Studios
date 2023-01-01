@@ -4,6 +4,15 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SecretService {
-  secrets = [];
+  secrets = [
+    {
+      id: 1,
+      title: 'Bendy',
+      objectifImgLink: '',
+      resultImgLink: '',
+      log: ''
+
+    }
+  ];
   constructor() { }
 }
