@@ -1,8 +1,10 @@
 <br>
 
-<a [routerLink]="['/newMovie']" class="btn btn-dark">Rajouter un Film</a>
+<br><div class="text-center">
+    <a [routerLink]="['/newMovie']" class="btn btn-dark">Add a new movie</a>
+</div>
 
-<br>
+
 
 <br><ul class="list-group">
     <app-movie *ngFor="let movie of movies; let i = index" 
@@ -19,6 +21,8 @@
 </ul>
 
 <br>
-
-<button class="btn btn-outline-success" (click)="changeMovieNatureAll()">Tout les movie son Originaux</button>
-&nbsp; <button class="btn btn-outline-danger" (click)="unChangeMovieNatureAll()">Tout les movie son des Reproduction</button>
+<div class="text-center">
+    <button class="btn btn-dark" (click)="changeMovieNatureAll()">Set all movies to Original</button>
+    &nbsp; <button class="btn btn-dark" (click)="unChangeMovieNatureAll()">Set all movies to Reproduction</button><br>
+</div>
+<br>
