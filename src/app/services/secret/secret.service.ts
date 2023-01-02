@@ -23,7 +23,7 @@ export class SecretService {
       nameOfSubject: '[ACCESS DENIED]',
       objectifImgLink: 'https://static.wikia.nocookie.net/bendy-and-the-ink-machine/images/9/91/Boris_Cutout.png',
       resultImgLink: 'https://static.wikia.nocookie.net/bendy-and-the-ink-machine/images/0/08/BATDRBoris-by-MLSpence.png',
-      killCount:'',
+      killCount:'It is presumed, that he is the cause of many lunch disappearances. Some of his versions were even known to tinker with the ink machine, causing it to malfunction or stop.',
       log: ''
 
     },
