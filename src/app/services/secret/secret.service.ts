@@ -19,10 +19,10 @@ export class SecretService {
     {
       id: 2,
       title: 'Boris',
-      nickname:'The Wolf',
+      nickname:'Tom',
       nameOfSubject: '[ACCESS DENIED]',
       objectifImgLink: '',
-      resultImgLink: '',
+      resultImgLink: 'https://static.tvtropes.org/pmwiki/pub/images/tom_4.png',
       killCount:'',
       log: ''
 
