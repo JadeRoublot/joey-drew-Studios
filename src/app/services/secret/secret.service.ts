@@ -26,6 +26,17 @@ export class SecretService {
       killCount:'',
       log: ''
 
+    },
+    {
+      id: 3,
+      title: '[ACCES DENIED]',
+      nickname:'The Projectionist',
+      nameOfSubject: 'Norman Polk',
+      objectifImgLink: '. . .',
+      resultImgLink: 'https://static.wikia.nocookie.net/bendy-and-the-ink-machine/images/9/9c/ProjectionistNewTextures.png',
+      killCount:'',
+      log: ''
+
     }
   ];
   constructor() { }
