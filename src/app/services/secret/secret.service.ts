@@ -10,8 +10,8 @@ export class SecretService {
       title: 'Bendy',
       nickname:'The ink demon',
       nameOfSubject: '[ACCESS DENIED]',
-      objectifImgLink: '',
-      resultImgLink: '',
+      objectifImgLink: 'https://static.wikia.nocookie.net/bendy-and-the-ink-machine/images/e/e6/Bendy-cutout.png',
+      resultImgLink: 'https://static.wikia.nocookie.net/bendy-and-the-ink-machine/images/4/44/Ink_demonz_2-by-MLSpence.png',
       killCount:'',
       log: ''
 
@@ -19,10 +19,10 @@ export class SecretService {
     {
       id: 2,
       title: 'Boris',
-      nickname:'Tom',
+      nickname:'The Wolf',
       nameOfSubject: '[ACCESS DENIED]',
-      objectifImgLink: '',
-      resultImgLink: 'https://static.tvtropes.org/pmwiki/pub/images/tom_4.png',
+      objectifImgLink: 'https://static.wikia.nocookie.net/bendy-and-the-ink-machine/images/9/91/Boris_Cutout.png',
+      resultImgLink: 'https://static.wikia.nocookie.net/bendy-and-the-ink-machine/images/0/08/BATDRBoris-by-MLSpence.png',
       killCount:'',
       log: ''
 
