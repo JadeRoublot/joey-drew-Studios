@@ -35,7 +35,7 @@ export class SecretService {
       objectifImgLink: '. . .',
       resultImgLink: 'https://static.wikia.nocookie.net/bendy-and-the-ink-machine/images/9/9c/ProjectionistNewTextures.png',
       killCount:'He is the cause of many material damages. And might be the cause of the death of every projectionists who try to take over the jobs of the now dead, Norman Polk.',
-      log: ''
+      log: 'The existence of the projectionist is a mistake all by itself. It is unknown what pushed mister Polk to go so close to the ink machine for him to got stuck in it. But the result is the same. It is unknown if the creature he became kept some or even any of his past memories. One thing however is sure, if you want to avoid any problem stay out of his light.'
 
     }
   ];
