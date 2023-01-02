@@ -3,7 +3,91 @@
 <img src="https://www.gematsu.com/wp-content/uploads/2021/12/Company-Logo_Joey-Drew-Studios.png" style="width: 300px;">
 
 <br>
+<div *ngIf="vinyl"> 
+<div class="card">
+<div class="row">
+    <div class="col-12 col-sm-12">
+      <div class="form-group">
+        <label>Title</label><br>
+        <input type="text" class="form-control" [(ngModel)]="vinyl.title" >
+      </div>
+    </div>
+    
+  </div>
 
-<p>vinyl-modif works!</p>
+  <br>
 
-{{vinyl|json}}
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label>Producer</label><br>
+        <input type="text" class="form-control"[(ngModel)]="vinyl.productor" >
+      </div>
+    </div>
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label>Release Date</label><br>
+        <input type="text" class="form-control" [(ngModel)]="vinyl.releaseDate">
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+        <label>Movies using this music</label><br>
+        <input type="text" class="form-control"  [(ngModel)]="vinyl.movieUsing" >
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+          <label>Link of the music</label><br>
+          <input type="text" class="form-control"  [(ngModel)]="vinyl.link">
+        </div>
+      </div>
+
+  </div>
+
+   <br>
+
+  <div class="row">
+   
+    <div class="col-12 col-sm-6">
+      <div class="form-group row">
+        <label class="col-12 col-form-label">
+    Tr / min
+        </label>
+        <div class="col-12 row">
+          <div class="col-6">
+            <div class="form-check">
+              <input type="radio" name="Tour" class="form-check-input" [value]="true" [(ngModel)]="vinyl.tour"> <label class="form-check-label">33 rpm</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-check">
+              <input type="radio" name="Tour" class="form-check-input" [value]="false"  [(ngModel)]="vinyl.tour"> <label class="form-check-label">78 rpm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <br>
+   </div>
+</div>
+  <br>
+  <div class="row-button">
+    <div class="col-12 text-center">
+      <div class="submit">
+        <button class="btn btn-lg btn-dark">Submit</button>&nbsp; &nbsp;
+        &nbsp; &nbsp;  <a [routerLink]="['/vinyl']" class="btn btn-lg btn-dark">Return</a> <br>
+                
+      </div>
+    </div>
+  </div>
+<br>
