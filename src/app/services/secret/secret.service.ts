@@ -34,7 +34,7 @@ export class SecretService {
       nameOfSubject: 'Norman Polk',
       objectifImgLink: '. . .',
       resultImgLink: 'https://static.wikia.nocookie.net/bendy-and-the-ink-machine/images/9/9c/ProjectionistNewTextures.png',
-      killCount:'',
+      killCount:'He is the cause of many material damages. And might be the cause of the death of every projectionists who try to take over the jobs of the now dead, Norman Polk.',
       log: ''
 
     }
