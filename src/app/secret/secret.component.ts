@@ -9,6 +9,7 @@ import { SecretService } from '../services/secret/secret.service';
 export class SecretComponent implements OnInit {
 
   @Input() secretTitle?: string;
+  @Input() secretNickname?: string;
   @Input() secretObjectifImgLink?: string;
   @Input() secretResultImgLink?: string;
   @Input() secretNameOfSubjectChosed?: string;

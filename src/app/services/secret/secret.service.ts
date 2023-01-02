@@ -8,6 +8,7 @@ export class SecretService {
     {
       id: 1,
       title: 'Bendy',
+      nickname:'The ink demon',
       nameOfSubject: '[ACCESS DENIED]',
       objectifImgLink: '',
       resultImgLink: '',
@@ -18,6 +19,7 @@ export class SecretService {
     {
       id: 2,
       title: 'Boris',
+      nickname:'The Wolf',
       nameOfSubject: '[ACCESS DENIED]',
       objectifImgLink: '',
       resultImgLink: '',
