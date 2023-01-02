@@ -12,7 +12,7 @@ export class SecretService {
       nameOfSubject: '[ACCESS DENIED]',
       objectifImgLink: 'https://static.wikia.nocookie.net/bendy-and-the-ink-machine/images/e/e6/Bendy-cutout.png',
       resultImgLink: 'https://static.wikia.nocookie.net/bendy-and-the-ink-machine/images/4/44/Ink_demonz_2-by-MLSpence.png',
-      killCount:'',
+      killCount:'Is the cause of presumably more than 16 disappearances among Joey Drew Studio staff. And at, at least killed 4 of them. One of which, we found only the torso and a left hand.',
       log: ''
 
     },
