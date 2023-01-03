@@ -15,7 +15,7 @@ export class SecretComponent implements OnInit {
   @Input() secretNameOfSubjectChosed?: string;
   @Input() secretKillCount?: string;
   @Input() secretLog?: string;
-  @Input() id?: number;
+  @Input() id?: string;
 
 
 

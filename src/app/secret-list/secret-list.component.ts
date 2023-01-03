@@ -8,14 +8,16 @@ import { SecretService } from '../services/secret/secret.service';
 })
 export class SecretListComponent implements OnInit {
   
-  secrets:any = [];
+  secrets! :any;
 
   constructor(
     public Secret: SecretService
   ) { }
 
-  ngOnInit(){
-    this.secrets = this.Secret.secrets;
+  ngOnInit(): void {
+    this.Secret.getAllSecrets().subscribe((data: any) => {
+      this.secrets = data;
+    });
   }
 
 }

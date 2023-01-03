@@ -98,29 +98,29 @@ export class MovieService {
   }
 
   setNature() {
-    for (const movie of this.movies) {
-      movie.nature = true;
-    }
+    // for (const movie of this.movies) {
+    //   movie.nature = true;
+    // }
   }
 
   setUnNature() {
-    for (const movie of this.movies) {
-      movie.nature = false;
-      console.log(movie);
-    }
+    // for (const movie of this.movies) {
+    //   movie.nature = false;
+    //   console.log(movie);
+    // }
   }
 
   switchNature(index : number) {
-    this.movies[index].nature = !this.movies[index].nature;
+    // this.movies[index].nature = !this.movies[index].nature;
   }
 
   getMovieById(id :number) {
-    let tmp;
-      for(const movie of this.movies) {
-        if(movie.id == id) {
-            tmp = movie;
-          }
-      }
-      return tmp;
-  }
+  //   let tmp;
+  //     for(const movie of this.movies) {
+  //       if(movie.id == id) {
+  //           tmp = movie;
+  //         }
+  //     }
+  //     return tmp;
+   }
 }
