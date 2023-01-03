@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { VinylService } from '../services/vinyl/vinyl.service';
+import { Vinyls } from '../models/vinyls.model';
 
 @Component({
   selector: 'app-vinyl-new',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VinylNewComponent implements OnInit {
 
-  constructor() { }
+    public vinyl! :Vinyls;
+
+  constructor(
+    private Vinyl: VinylService
+  ) { }
 
   ngOnInit(): void {
+    this.vinyl = new Vinyls();
   }
 
+  add() {
+    this.Vinyl.saveNewVinyl(this.vinyl).subscribe(() => {
+      this.vinyl = new Vinyls();
+    });
+  }
 }

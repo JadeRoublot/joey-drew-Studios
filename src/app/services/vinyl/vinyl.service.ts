@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firestore';
 import { Vinyls } from '../../models/vinyls.model';
 import { map } from 'rxjs/operators';
+import{Subject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -68,6 +69,14 @@ export class VinylService {
         })
       })
     );
+  }
+
+  saveNewVinyl(vinyl: Vinyls): any {
+    return new Observable(obs => {
+      this.vinylsRef.add({...vinyl}).then(() => {
+        obs.next();
+      })
+    })
   }
 
   setTour() {
