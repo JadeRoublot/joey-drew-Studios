@@ -7,14 +7,16 @@ import { MovieService } from '../services/movie/movie.service';
   styleUrls: ['./movie-list.component.scss']
 })
 export class MovieListComponent implements OnInit {
-  movies:any = [];
+  movies!:any;
 
   constructor(
     private Movie: MovieService
   ) { }
 
-  ngOnInit() {
-    this.movies = this.Movie.movies;
+  ngOnInit(): void {
+    this.Movie.getAllMovies().subscribe((data:any) => {
+      this.movies = data;
+    });
   }
 
   changeMovieNatureAll() {

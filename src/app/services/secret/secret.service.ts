@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firestore';
 import { Secrets } from '../../models/secrets.model';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
