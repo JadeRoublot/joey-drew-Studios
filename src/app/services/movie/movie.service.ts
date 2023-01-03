@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firestore';
 import { Movies } from '../../models/movies.model';
 import { map } from 'rxjs/operators';
+import{Subject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -95,6 +96,14 @@ export class MovieService {
         })
       })
     );
+  }
+
+  saveNewMovie(movie: Movies): any {
+    return new Observable(obs => {
+      this.moviesRef.add({...movie}).then(() => {
+        obs.next();
+      })
+    })
   }
 
   setNature() {
