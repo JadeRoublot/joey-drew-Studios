@@ -15,7 +15,7 @@ export class VinylComponent implements OnInit {
   @Input() vinylMovieUsed?: string;
   @Input() vinylVideoLink?: string;
   @Input() vinylTour?: boolean;
-  @Input() id?: number ;
+  @Input() id?: string ;
 
   constructor(
     public Vinyl: VinylService

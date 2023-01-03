@@ -7,14 +7,16 @@ import { VinylService } from '../services/vinyl/vinyl.service';
   styleUrls: ['./vinyl-list.component.scss']
 })
 export class VinylListComponent implements OnInit {
-  vinyls:any = [];
+  vinyls! :any;
 
   constructor(
     private Vinyl: VinylService
   ) { }
 
   ngOnInit() {
-    this.vinyls = this.Vinyl.vinyls;
+    this.Vinyl.getAllVinyls().subscribe((data: any) =>{
+    this.vinyls = data;
+    });
   }
 
   changeVinylTourAll() {
