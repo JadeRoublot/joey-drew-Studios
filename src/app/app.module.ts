@@ -24,6 +24,9 @@ import { SecretListComponent } from './secret-list/secret-list.component';
 import { SecretComponent } from './secret/secret.component';
 import { SecretLearnMoreComponent } from './secret-learn-more/secret-learn-more.component';
 
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,9 @@ import { SecretLearnMoreComponent } from './secret-learn-more/secret-learn-more.
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [
     MovieService,
