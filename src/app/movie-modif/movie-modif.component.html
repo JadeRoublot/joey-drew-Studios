@@ -4,6 +4,7 @@
 
 <br>
 
+
     <div *ngIf="movie"> 
         <div class="card">
 
@@ -112,7 +113,7 @@
         <div class="row-button">
             <div class="col-12 text-center">
             <div class="submit">
-                <button class="btn btn-lg btn-dark">Submit</button>&nbsp; &nbsp;
+                <button class="btn btn-lg btn-dark" [routerLink]="['/movie']" (click)="modif()">Submit</button>&nbsp; &nbsp;
                 &nbsp; &nbsp;  <a [routerLink]="['/movie']" class="btn btn-lg btn-dark">Return</a> <br>
                         
             </div>

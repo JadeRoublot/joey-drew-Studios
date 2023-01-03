@@ -106,6 +106,21 @@ export class MovieService {
     })
   }
 
+  get(id: any): any {
+    return new Observable(obs => {
+      this.moviesRef.doc(id).get().subscribe(res => {
+        obs.next({id: res.id, ...res.data()});
+      });
+    });
+  }
+
+  update(movie: Movies) {
+    return new Observable(obs => {
+      this.moviesRef.doc(movie.id).update(movie);
+      obs.next();
+    });
+  }
+
   setNature() {
     // for (const movie of this.movies) {
     //   movie.nature = true;

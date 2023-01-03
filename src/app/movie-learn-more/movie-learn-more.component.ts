@@ -17,10 +17,14 @@ export class MovieLearnMoreComponent implements OnInit {
     private sanitizer: DomSanitizer
   ) { }
 
-  ngOnInit(){
+  ngOnInit(): void{
     const id = this.route.snapshot.params['id'];
-    this.movie = this.Movie.getMovieById(id);
-    this.movie.link = this.sanitizer.bypassSecurityTrustResourceUrl(this.movie.link);
+    this.Movie.get(id).subscribe((value: any) => {
+    // console.log(value.link)
+     value.link = this.sanitizer.bypassSecurityTrustResourceUrl(value.link);
+     this.movie = value;
+   });
+
   }
   
 }
