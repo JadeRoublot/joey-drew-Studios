@@ -8,6 +8,7 @@ export class Secrets {
     resultImgLink: string;
     killCount: string;
     log: string;
+    secretAudio: string;
 
     constructor() {
 
@@ -18,6 +19,7 @@ export class Secrets {
         this.resultImgLink = '';
         this.killCount = '';
         this.log = '';
+        this.secretAudio = '';
 
     }
 }
