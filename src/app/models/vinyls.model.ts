@@ -14,7 +14,7 @@ export class Vinyls {
         this.releaseDate = '';
         this.productor = '';
         this.movieUsing = '';
-        this.link = '';
+        this.link = '. . .';
         this.tour = false;
 
     }
