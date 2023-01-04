@@ -28,6 +28,10 @@ export class VinylComponent implements OnInit {
     return this.vinylTour;
   }
 
+  suppr(){
+    this.Vinyl.delete(this.id);
+  }
+
   onSwitchVinyl() {
      //this.Vinyl.switchTour(this.id?);
    }

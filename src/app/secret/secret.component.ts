@@ -26,5 +26,7 @@ export class SecretComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  suppr(){
+    this.Secret.delete(this.id);
+  }
 }

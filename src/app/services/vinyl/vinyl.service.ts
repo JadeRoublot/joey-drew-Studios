@@ -92,6 +92,11 @@ export class VinylService {
       obs.next();
     });
   }
+
+  delete(id: any) {
+    this.vinylsRef.doc(id).delete();
+  }
+
   setTour() {
     // for (const vinyl of this.vinyls) {
     //   vinyl.tour = true;

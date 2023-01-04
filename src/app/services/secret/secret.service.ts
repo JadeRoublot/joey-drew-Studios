@@ -70,6 +70,10 @@ export class SecretService {
     });
   }
 
+  delete(id: any) {
+    this.secretsRef.doc(id).delete();
+  }
+
   getSecretById(id :number) {
     // let tmp;
     //   for(const secret of this.secrets) {
