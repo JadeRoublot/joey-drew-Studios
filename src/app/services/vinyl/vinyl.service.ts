@@ -78,7 +78,20 @@ export class VinylService {
       })
     })
   }
+  get(id: any): any {
+    return new Observable(obs => {
+      this.vinylsRef.doc(id).get().subscribe(res => {
+        obs.next({id: res.id, ...res.data()});
+      });
+    });
+  }
 
+  update(vinyl: Vinyls) {
+    return new Observable(obs => {
+      this.vinylsRef.doc(vinyl.id).update(vinyl);
+      obs.next();
+    });
+  }
   setTour() {
     // for (const vinyl of this.vinyls) {
     //   vinyl.tour = true;

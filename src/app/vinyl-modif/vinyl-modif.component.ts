@@ -8,16 +8,28 @@ import { VinylService } from '../services/vinyl/vinyl.service';
   styleUrls: ['./vinyl-modif.component.scss']
 })
 export class VinylModifComponent implements OnInit {
-  vinyl: any;
-
+  vinyl: any = null;
+  change:boolean = false;
+  
   constructor(
     private Vinyl: VinylService,
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     const id = this.route.snapshot.params['id'];
-    this.vinyl = this.Vinyl.getVinylById(id);
+     this.Vinyl.get(id).subscribe((value: any) => {
+      console.log(value)
+      this.vinyl = value;
+    });
   }
 
+  modif() {
+    this.Vinyl.update(this.vinyl).subscribe(() => {
+      this.change = true;
+      setTimeout(() => {
+        this.change = false;
+      }, 3000);
+    })
+  }
 }

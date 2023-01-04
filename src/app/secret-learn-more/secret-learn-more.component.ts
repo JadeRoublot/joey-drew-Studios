@@ -15,9 +15,12 @@ export class SecretLearnMoreComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     const id = this.route.snapshot.params['id'];
-    this.secret = this.Secret.getSecretById(id);
+     this.Secret.get(id).subscribe((value: any) => {
+      console.log(value)
+      this.secret = value;
+    });
   }
 
 }

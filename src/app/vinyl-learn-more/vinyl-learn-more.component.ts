@@ -15,9 +15,12 @@ export class VinylLearnMoreComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     const id = this.route.snapshot.params['id'];
-    this.vinyl = this.Vinyl.getVinylById(id);
+     this.Vinyl.get(id).subscribe((value: any) => {
+      console.log(value)
+      this.vinyl = value;
+    });
   }
 
 }

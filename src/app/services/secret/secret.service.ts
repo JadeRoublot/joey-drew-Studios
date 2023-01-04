@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firestore';
 import { Secrets } from '../../models/secrets.model';
 import { map } from 'rxjs/operators';
+import{Subject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -60,6 +61,13 @@ export class SecretService {
         })
       })
     );
+  }
+  get(id: any): any {
+    return new Observable(obs => {
+      this.secretsRef.doc(id).get().subscribe(res => {
+        obs.next({id: res.id, ...res.data()});
+      });
+    });
   }
 
   getSecretById(id :number) {
