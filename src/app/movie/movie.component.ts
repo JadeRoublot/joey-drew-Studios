@@ -30,6 +30,10 @@ export class MovieComponent implements OnInit {
     return this.movieNature;
   }
 
+  suppr(){
+    this.Movie.delete(this.id);
+  }
+
   onSwitchMovie() {
     //this.Movie.switchNature(this.id);
   }

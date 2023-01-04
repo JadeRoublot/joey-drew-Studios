@@ -121,6 +121,10 @@ export class MovieService {
     });
   }
 
+  delete(id: any) {
+    this.moviesRef.doc(id).delete();
+  }
+
   setNature() {
     // for (const movie of this.movies) {
     //   movie.nature = true;
@@ -134,7 +138,7 @@ export class MovieService {
     // }
   }
 
-  switchNature(index : number) {
+  switchNature(id: any) {
     // this.movies[index].nature = !this.movies[index].nature;
   }
 
