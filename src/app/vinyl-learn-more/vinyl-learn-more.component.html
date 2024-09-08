@@ -1,89 +1,95 @@
 <div *ngIf="vinyl">
+  <br> 
+  <br>
+  <br>
+  <br>
+  <br>
 
-    <br> 
-    <br>
-    <br>
-    <br>
-      <br>
-     <div class="row">
-        <div class="col-lg-4">
-            <div class="card mb-4">
-            <div class="card-body text-center">
-                <img class="affiche" src="https://cdn-icons-png.flaticon.com/512/182/182377.png" alt="image movie">
-                <br>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card mb-4">
+        <div class="card-body text-center">
+          <img class="affiche" src="https://cdn-icons-png.flaticon.com/512/182/182377.png" alt="image movie">
+          <br>
                
-            </div>
         </div>
-        </div>
-    
-
- <div class="col-lg-7">
-    <div class="card mb-4">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-sm-3">
-            <p class="mb-0">Title</p>
-          </div>
-          <div class="col-sm-9">
-            <p>{{vinyl.title}}</p>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-sm-3">
-            <p class="mb-0">Tr / min</p>
-          </div>
-          <div class="col-sm-9" *ngIf="vinyl.tour === false">
-       
-            <p>78 rpm</p>
-    
-        </div>
-    
-        <div class="col-sm-9" *ngIf="vinyl.tour === true">
-    
-            <p>33 rpm</p>
-    
-        </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-sm-3">
-            <p class="mb-0">Producer</p>
-          </div>
-          <div class="col-sm-9">
-            <p>{{vinyl.productor}}</p>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-sm-3">
-            <p class="mb-0">Date of Release</p>
-          </div>
-          <div class="col-sm-9">
-            <p>{{vinyl.releaseDate}}</p>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-sm-3">
-            <p class="mb-0">From the Movie</p>
-          </div>
-          <div class="col-sm-9">
-            <p>{{vinyl.movieUsing}}</p>
-          </div>
-        </div>
-        
       </div>
     </div>
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-  </div>
-  
-</div>
     
+    <div class="col-lg-7">
+      <div class="card mb-4">
+        <div class="card-body">
 
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Title</p>
+            </div>
+
+            <div class="col-sm-9">
+              <p>{{vinyl.title}}</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Tr / min</p>
+            </div>
+
+            <div class="col-sm-9" *ngIf="vinyl.tour === false">
+              <p>78 rpm</p>
+            </div>
+    
+            <div class="col-sm-9" *ngIf="vinyl.tour === true">
+              <p>33 rpm</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Producer</p>
+            </div>
+
+            <div class="col-sm-9">
+              <p>{{vinyl.productor}}</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Date of Release</p>
+            </div>
+
+            <div class="col-sm-9">
+              <p>{{vinyl.releaseDate}}</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">From the Movie</p>
+            </div>
+
+            <div class="col-sm-9">
+              <p>{{vinyl.movieUsing}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+    </div>
+  </div> 
 </div>

@@ -1,22 +1,29 @@
 <br>
-<br><div class="text-center">
+<br>
+
+<div class="text-center">
     <a [routerLink]="['/newVinyl']" class="btn btn-dark">Add new Vinyl</a>
 </div>
 
-
-<br><ul class="list-group">
-    <app-vinyl *ngFor="let vinyl of vinyls; let i = index" 
-    [vinylTitle]="vinyl.title" 
-    [vinylReleaseDate]="vinyl.releaseDate"
-    [vinylProductor]="vinyl.productor" 
-    [vinylMovieUsed]="vinyl.movieUsing" 
-    [vinylVideoLink]="vinyl.link"
-    [vinylTour]="vinyl.tour" 
-    [id]="vinyl.id"></app-vinyl>
-</ul>
 <br>
+
+<ul class="list-group">
+    <app-vinyl *ngFor="let vinyl of vinyls; let i = index" 
+        [vinylTitle]="vinyl.title" 
+        [vinylReleaseDate]="vinyl.releaseDate"
+        [vinylProductor]="vinyl.productor" 
+        [vinylMovieUsed]="vinyl.movieUsing" 
+        [vinylVideoLink]="vinyl.link"
+        [vinylTour]="vinyl.tour" 
+        [id]="vinyl.id">
+    </app-vinyl>
+</ul>
+
+<br>
+
 <div class="text-center">
     <button class="btn btn-dark" (click)="changeVinylTourAll()">Set all vinyl to 33 rpm</button>
     &nbsp;<button class="btn btn-dark" (click)=" unChangeVinylTourAll()">Set all vinyl to 78 rpm</button>
 </div>
+
 <br>

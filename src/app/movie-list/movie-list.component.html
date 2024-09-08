@@ -1,23 +1,26 @@
 <br>
-
-<br><div class="text-center">
+<br>
+<div class="text-center">
     <a [routerLink]="['/newMovie']" class="btn btn-dark">Add a new movie</a>
 </div>
 
 
 
-<br><ul class="list-group">
+<br>
+
+<ul class="list-group">
     <app-movie *ngFor="let movie of movies; let i = index" 
-    [movieTitle]="movie.title" 
-    [movieReleaseDate]="movie.releaseDate"
-    [movieProductor]="movie.productor" 
-    [movieRealisator]="movie.realisator" 
-    [movieSynopsis]="movie.synopsis" 
-    [movieNature]="movie.nature" 
-    [movieMusic]="movie.musicComposeur" 
-    [movieVideoLink]="movie.link"
-    [movieAfficheLink]="movie.affiche" 
-    [id]="movie.id"></app-movie>
+        [movieTitle]="movie.title" 
+        [movieReleaseDate]="movie.releaseDate"
+        [movieProductor]="movie.productor" 
+        [movieRealisator]="movie.realisator" 
+        [movieSynopsis]="movie.synopsis" 
+        [movieNature]="movie.nature" 
+        [movieMusic]="movie.musicComposeur" 
+        [movieVideoLink]="movie.link"
+        [movieAfficheLink]="movie.affiche" 
+        [id]="movie.id">
+    </app-movie>
 </ul>
 
 <br>
